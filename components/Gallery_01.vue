@@ -5,7 +5,7 @@
         class="flex flex-col justify-center items-center border-2 border-red-500 my-2"
       >
         <div>
-          <ContentDoc path="main/block_03" v-slot="{ doc }">
+          <ContentDoc path="gallery/block_01" v-slot="{ doc }">
             <small>{{ doc.description }}</small>
             <ContentRenderer :value="doc" />
           </ContentDoc>

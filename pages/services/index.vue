@@ -1,5 +1,5 @@
 <template>
   <NuxtLayout name="base">
-    <Main_01 />
+    <Services_01 />
   </NuxtLayout>
 </template>

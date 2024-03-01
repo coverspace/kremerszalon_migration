@@ -2,9 +2,9 @@
   <div class="grid grid-col-12">
     <div class="col-span-12">
       <div class="flex flex-row justify-between items-center w-full">
-        <NuxtLink to="/main">
+        <a href="/">
           <NuxtImg src="logo.png" class="w-44 h-fit my-6" />
-        </NuxtLink>
+        </a>
         <ul
           class="flex flex-row justify-end items-center gap-x-10 w-full p-4 px-8"
         >

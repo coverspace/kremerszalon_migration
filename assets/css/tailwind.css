@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: CourgetteRegular;
+  src: url("./../fonts/Courgette/Courgette-Regular.ttf");
+  font-weight: Regular;
+}
+
+@layer utilities {
+  .fancy-text-Regular {
+    font-family: CourgetteRegular;
+  }
+}

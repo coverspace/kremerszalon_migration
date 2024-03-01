@@ -1,6 +1,7 @@
 <template>
+  <!-- fixed bottom-0 left-0 right-0 -->
   <footer
-    class="container flex flex-row justify-between items-center fixed bottom-0 left-0 right-0 w-full mx-auto pt-4 pb-8 border-t"
+    class="container flex flex-row justify-between items-center w-full mx-auto pt-4 pb-8 border-t"
     v-for="item in content"
     v-if="content"
   >

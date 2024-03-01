@@ -6,7 +6,7 @@
       </slot>
       <AppCarousel />
     </header>
-    <section class="bg-gray-200">
+    <section class="bg-white">
       <slot />
     </section>
     <footer class="">

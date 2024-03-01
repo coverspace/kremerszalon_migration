@@ -1,9 +1,10 @@
 <template>
-  <div class="border-4 border-blue-500">
+  <div class="container mx-auto">
     <header class="">
       <slot name="navigation">
         <AppNavigation :navigation-tree="navigation" />
       </slot>
+      <AppCarousel />
     </header>
     <section class="bg-gray-200">
       <slot />
@@ -21,8 +22,8 @@ const { data: navigation } = await useAsyncData("navigation", () => {
 });
 </script>
 
-<style lang="scss" scoped>
-div {
-  content: "";
+<style lang="css" scoped>
+body {
+  background-color: red;
 }
 </style>

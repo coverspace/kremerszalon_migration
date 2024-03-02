@@ -9,7 +9,7 @@
     <section class="bg-white">
       <slot />
     </section>
-    <footer class="">
+    <footer class="mt-16">
       <AppFooter />
     </footer>
   </div>

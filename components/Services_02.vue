@@ -2,14 +2,14 @@
   <div class="grid grid-col-12">
     <div class="col-span-12">
       <div class="flex gap-8 mt-16">
-        <ContentDoc path="services/block_01" v-slot="{ doc }">
+        <ContentDoc path="services/block_02" v-slot="{ doc }">
           <div
             class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
           >
             <h1
               class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-2 ml-8"
             >
-              <IconHaircut class="w-8 h-fit" />
+              <IconNail class="w-12 h-fit" />
               {{ doc.service_title }}
             </h1>
             <div class="flex flex-row justify-between items-end w-full p-8">
@@ -59,6 +59,6 @@
 </template>
 
 <script setup>
-import IconHaircut from "./icons/IconHaircut.vue";
+import IconNail from "./icons/IconNail.vue";
 import IconCheck from "./icons/IconCheck.vue";
 </script>

@@ -12,7 +12,7 @@
             <IconQuote class="w-32 h-fit rotate-180" />
             <ContentRenderer
               :value="doc"
-              class="text-justify text-xl m-4 text-gray-600 fancy-text-Regular"
+              class="text-justify text-xl m-4 text-gray-600 font-fancy-1"
             />
             <IconQuote class="w-32 h-fit mt-auto mb-0" />
           </div>

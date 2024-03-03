@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-col-12">
+  <div class="grid grid-cols-12">
     <div class="col-span-12">
       <div class="flex flex-col justify-center items-center my-2">
         <ContentDoc path="main/block_01" v-slot="{ doc }" class="flex flex-row">

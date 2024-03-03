@@ -13,7 +13,7 @@
 
     <template #addons>
       <navigation />
-      <pagination id="kolbas" />
+      <pagination />
     </template>
   </carousel>
 </template>

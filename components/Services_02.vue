@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-col-12">
+  <div class="grid grid-cols-12">
     <div class="col-span-12">
       <div class="flex flex-row justify-between items-center gap-8 mt-16">
         <div class="h-full w-auto block">
@@ -74,7 +74,8 @@
                   </a>
                   <a
                     v-if="item.link"
-                    :href="`https://www.${item.link}`"
+                    @click="redirectToDomain($event)"
+                    :href="`https://${item.link}`"
                     target="_blank"
                     class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
                   >
@@ -96,4 +97,12 @@ import IconNail from "@/components/icons/IconNail.vue";
 import IconCheck from "@/components/icons/IconCheck.vue";
 import IconLink from "@/components/icons/IconLink.vue";
 import IconPhone from "@/components/icons/IconPhone.vue";
+
+const redirectToDomain = (event) => {
+  event.preventDefault();
+  const link = event.target;
+  const url = new URL(link.href);
+  const domain = url.hostname.replace(/^www\./, ""); // Remove 'www.' if present
+  window.open(`//${domain}`, "_blank");
+};
 </script>

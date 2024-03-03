@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import IconCosmetic from "./icons/IconCosmetic.vue";
-import IconCheck from "./icons/IconCheck.vue";
-import IconPhone from "./icons/IconPhone.vue";
+import IconCosmetic from "@/components/icons/IconCosmetic.vue";
+import IconCheck from "@/components/icons/IconCheck.vue";
+import IconPhone from "@/components/icons/IconPhone.vue";
 </script>

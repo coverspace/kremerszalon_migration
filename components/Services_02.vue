@@ -92,8 +92,8 @@
 </template>
 
 <script setup>
-import IconNail from "./icons/IconNail.vue";
-import IconCheck from "./icons/IconCheck.vue";
-import IconLink from "./icons/IconLink.vue";
-import IconPhone from "./icons/IconPhone.vue";
+import IconNail from "@/components/icons/IconNail.vue";
+import IconCheck from "@/components/icons/IconCheck.vue";
+import IconLink from "@/components/icons/IconLink.vue";
+import IconPhone from "@/components/icons/IconPhone.vue";
 </script>

@@ -12,10 +12,13 @@
     <footer class="mt-16">
       <AppFooter />
     </footer>
+    <!-- partials -->
+    <ScrollToTopButton />
   </div>
 </template>
 
 <script setup>
+import ScrollToTopButton from "@/components/partials/ScrollToTopButton.vue";
 const route = useRoute();
 const { data: navigation } = await useAsyncData("navigation", () => {
   return fetchContentNavigation();

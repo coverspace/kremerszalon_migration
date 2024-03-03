@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-import IconHaircut from "./icons/IconHaircut.vue";
-import IconCheck from "./icons/IconCheck.vue";
-import IconPhone from "./icons/IconPhone.vue";
+import IconHaircut from "@/components/icons/IconHaircut.vue";
+import IconCheck from "@/components/icons/IconCheck.vue";
+import IconPhone from "@/components/icons/IconPhone.vue";
 </script>

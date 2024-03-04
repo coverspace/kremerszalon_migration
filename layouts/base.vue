@@ -1,6 +1,7 @@
 <template>
-  <div class="container mx-auto">
+  <div class="lg:container mx-auto">
     <header class="">
+      <CreditCards />
       <slot name="navigation">
         <AppNavigation :navigation-tree="navigation" />
       </slot>
@@ -18,6 +19,7 @@
 </template>
 
 <script setup>
+import CreditCards from "@/components/partials/CreditCards.vue";
 import ScrollToTopButton from "@/components/partials/ScrollToTopButton.vue";
 const route = useRoute();
 const { data: navigation } = await useAsyncData("navigation", () => {

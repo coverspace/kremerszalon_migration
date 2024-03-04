@@ -1,5 +1,6 @@
 <template>
   <div class="grid grid-cols-12">
+    KártyaElfogadás
     <div class="col-span-12">
       <div class="flex flex-row justify-between items-center w-full">
         <a href="/">
@@ -11,7 +12,7 @@
           <li v-for="(item, index) in navigationTree" :key="index">
             <NuxtLink
               :to="item._path === '/main' ? '/' : item._path"
-              class="text-gray-600 font-bold text-lg pb-2"
+              class="text-gray-600 font-bold text-xl pb-2"
             >
               {{ item.children[0].title }}
             </NuxtLink>

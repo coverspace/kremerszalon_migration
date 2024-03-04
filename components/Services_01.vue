@@ -7,7 +7,7 @@
             class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
           >
             <h1
-              class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-2 ml-8"
+              class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-4 ml-8"
             >
               <IconHaircut class="w-8 h-fit" />
               {{ doc.service_title }}

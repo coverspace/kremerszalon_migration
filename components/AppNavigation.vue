@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-12">
-    KártyaElfogadás
+    KártyaElfogadás_StickyMenu_MobileMenu_CookiesPrompt_Responsivity
     <div class="col-span-12">
       <div class="flex flex-row justify-between items-center w-full">
         <a href="/">

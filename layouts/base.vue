@@ -29,6 +29,6 @@ const { data: navigation } = await useAsyncData("navigation", () => {
 
 <style lang="css" scoped>
 body {
-  background-color: red;
+  background-color: white;
 }
 </style>

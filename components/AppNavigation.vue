@@ -5,13 +5,20 @@
         <a href="/">
           <NuxtImg src="logo.png" class="w-44 h-fit my-6 mx-4" />
         </a>
-        <button @click="openMenu">
+        <span @click="openMenu">
           <IconMenu
-            class="w-16 h-fit p-2 border rounded-lg mx-6 bg-gray-100 text-gray-500"
+            class="w-10 h-fit p-2 border rounded-lg m-8 bg-gray-50 focus:bg-gray-200 text-gray-500"
           />
-        </button>
+        </span>
       </div>
-      <SideBar :setBar="setBar" @cancel="setBar = false" />
+      <Transition>
+        <SideBar
+          :setBar="setBar"
+          @cancel="setBar = false"
+          :navigationTree="navigationTree"
+          class="absolute top-0 right-0 z-10 w-3/4"
+        />
+      </Transition>
       <div class="hidden lg:flex flex-row justify-between items-center w-full">
         <a href="/">
           <NuxtImg src="logo.png" class="w-44 h-fit my-6 mx-4" />
@@ -62,5 +69,16 @@ const openMenu = () => {
 
 .router-link-exact-inactive {
   border-bottom: 2px solid transparent;
+}
+
+.v-enter-active,
+.v-leave-active {
+  right: 0;
+  transition: right 200ms ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  right: -75%;
 }
 </style>

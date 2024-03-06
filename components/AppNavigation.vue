@@ -52,10 +52,6 @@ const props = defineProps({
 
 const setBar = ref(false);
 
-onMounted(() => {
-  // console.log("navigationTree", props.navigationTree);
-});
-
 const openMenu = () => {
   console.log("openMenu");
   setBar.value = !setBar.value;

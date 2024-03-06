@@ -7,13 +7,13 @@
             class="flex flex-col justify-between items-between gap-x-4 w-full"
           >
             <h1
-              class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-4xl mt-2 ml-8"
+              class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-xl lg:text-4xl mx-auto mt-2 lg:ml-8"
             >
               <IconTeam class="w-8 h-fit" />
               {{ doc.service_text }}
             </h1>
             <div
-              class="flex flex-row justify-start items-center gap-x-8 w-full"
+              class="flex flex-col lg:flex-row justify-start items-center gap-4 lg:gap-x-8 lg:w-full mx-4 lg:mx-0"
             >
               <div
                 v-for="(item, index) in doc.services_staffs"
@@ -65,13 +65,13 @@
             class="flex flex-col justify-between items-between gap-x-4 w-full"
           >
             <h1
-              class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-4xl mt-2 ml-8"
+              class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-xl lg:text-4xl mt-2 mx-auto lg:ml-8"
             >
               <IconModel class="w-8 h-fit" />
               <ContentRenderer :value="doc" />
             </h1>
             <div
-              class="flex flex-row justify-start items-center gap-x-8 w-full"
+              class="flex flex-col lg:flex-row justify-start items-center gap-4 lg:gap-x-8 lg:w-full mx-4 lg:mx-auto"
             >
               <div
                 v-for="(item, index) in doc.modells"
@@ -166,7 +166,7 @@ const images = [
 ];
 </script>
 
-<style scoped>
+<style lang="css" scoped>
 #carousel > div > ol > li > img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -174,6 +174,12 @@ const images = [
   border: 1px solid #979797;
   margin: 2rem 1rem 3rem;
   /* width: 100%; */
+}
+
+@media (max-width: 1024px) {
+  .carousel__pagination {
+    display: none !important;
+  }
 }
 
 .carousel__slide {

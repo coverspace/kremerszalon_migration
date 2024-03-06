@@ -1,19 +1,17 @@
 <template>
   <!-- fixed bottom-0 left-0 right-0 -->
   <footer
-    class="container flex flex-row justify-between items-center w-full mx-auto pt-4 pb-8 border-t"
+    class="flex flex-col lg:flex-row justify-between items-center w-full mx-auto pt-4 pb-8 border-t"
     v-for="item in content"
     v-if="content"
   >
-    <div>
-      <h1 class="text-gray-500">
-        {{ item.brand }}
-        &copy;
-        {{ currentYear }}
-        {{ item.title }} -
-        {{ item.body.children[0].children[0].value }}
-      </h1>
-    </div>
+    <h1 class="text-gray-500 text-center lg:text-left">
+      {{ item.brand }}
+      &copy;
+      {{ currentYear }}
+      {{ item.title }} -
+      {{ item.body.children[0].children[0].value }}
+    </h1>
     <div>
       <a
         :href="item.link"

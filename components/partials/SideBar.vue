@@ -70,16 +70,23 @@ const props = defineProps({
 
 const emit = defineEmits(["cancel"]);
 
-onMounted(() => {
-  console.log("mounted");
-});
-
 const logos = [
   "cards/Mastercard-logo.svg",
   "cards/Visa_Inc._logo.svg",
   "cards/Google_Pay_Logo.svg",
   "cards/Apple_Pay_logo.svg",
 ];
+
+// watch(
+//   () => props.setBar,
+//   (newValue) => {
+//     if (newValue) {
+//       document.body.style.overflow = "hidden";
+//     } else {
+//       document.body.style.overflow = "auto";
+//     }
+//   }
+// );
 </script>
 
 <style lang="css" scoped>

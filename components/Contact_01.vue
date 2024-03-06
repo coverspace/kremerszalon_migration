@@ -1,19 +1,25 @@
 <template>
   <div class="grid grid-cols-12">
     <div class="col-span-12 my-16">
-      <div class="flex flex-col justify-start items-start">
+      <div class="flex flex-col justify-start items-center">
         <ContentDoc path="/contact/block_01" v-slot="{ doc }">
-          <h1
-            class="flex flex-row items-center gap-x-2 my-8 text-gray-500 font-bold text-3xl mt-2 ml-8"
+          <div
+            class="flex flex-row justify-center lg:justify-start items-center w-full"
           >
-            <IconHaircut class="w-8 h-fit" />
-            {{ doc.service_text }}
-          </h1>
-          <div class="grid grid-cols-3 gap-4 w-full">
+            <h1
+              class="flex flex-row items-center gap-x-2 m-8 text-gray-500 font-bold text-xl lg:text-3xl mt-2"
+            >
+              <IconHaircut class="w-8 h-fit" />
+              {{ doc.service_text }}
+            </h1>
+          </div>
+          <div
+            class="flex flex-col justify-start items-center lg:grid lg:grid-cols-3 gap-4 w-full"
+          >
             <div
               v-for="(item, index) in doc.services_staffs"
               :key="index"
-              class="flex flex-col justify-start items-start w-full gap-y-1 p-8 rounded-lg border border-gray-50 shadow-lg bg-gradient-to-r from-pink-100 to-amber-100"
+              class="flex flex-col justify-start items-start w-full h-full gap-y-1 p-8 rounded-lg border border-gray-50 shadow-lg bg-gradient-to-r from-pink-100 to-amber-100"
             >
               <h1 class="text-gray-500 font-bold text-2xl font-fancy-1">
                 {{ item.name }}
@@ -50,12 +56,14 @@
     </div>
     <div class="col-span-12">
       <ContentDoc path="/contact/block_01" v-slot="{ doc }">
-        <h1
-          class="flex flex-row items-center gap-x-2 my-8 text-gray-500 font-bold text-3xl mt-2 ml-8"
-        >
-          <IconMap class="w-8 h-fit" />
-          {{ doc.map_text }}
-        </h1>
+        <div class="flex flex-row justify-center lg:justify-start items-center">
+          <h1
+            class="flex flex-row items-center gap-x-2 m-8 text-gray-500 font-bold text-xl lg:text-3xl mt-2"
+          >
+            <IconMap class="w-8 h-fit" />
+            {{ doc.map_text }}
+          </h1>
+        </div>
       </ContentDoc>
       <div class="h-[50vh] w-auto flex border border-gray-300 rounded-lg">
         <iframe

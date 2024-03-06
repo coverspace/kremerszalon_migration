@@ -1,7 +1,9 @@
 <template>
   <div class="grid grid-cols-12">
     <div class="col-span-12">
-      <div class="flex flex-row justify-between items-center gap-8 mt-16">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
+      >
         <div class="h-full w-auto block">
           <NuxtImg
             src="mukorom_01.jpg"
@@ -22,7 +24,9 @@
               <IconNail class="w-12 h-fit" />
               {{ doc.service_title }}
             </h1>
-            <div class="flex flex-row justify-start items-start gap-x-16 p-8">
+            <div
+              class="flex flex-col lg:flex-row justify-start items-start gap-x-16 p-8"
+            >
               <div
                 class="flex flex-col justify-between items-between gap-y-4 w-full"
               >

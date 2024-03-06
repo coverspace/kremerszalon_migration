@@ -4,18 +4,18 @@
       <div class="flex flex-col justify-center items-center">
         <ContentDoc path="prices/block_01" v-slot="{ doc }">
           <h1
-            class="flex flex-row justify-start items-center my-8 text-gray-600 text-4xl mt-2 ml-0 mr-auto"
+            class="flex flex-row justify-start items-center my-8 text-gray-600 text-xl mx-auto lg:text-4xl mt-2 lg:ml-0 lg:mr-auto"
           >
             <IconWallet class="w-8 h-fit" />
             {{ doc.prices_title }}
           </h1>
           <div
-            class="flex flex-row flex-wrap justify-start items-between h-full"
+            class="flex flex-col lg:flex-row flex-wrap justify-start items-between h-full"
           >
             <div
               v-for="tables in doc.price_table"
               :key="tables.row"
-              class="flex flex-row justify-start items-start w-1/2 p-4"
+              class="flex flex-row justify-start items-start w-full lg:w-1/2 p-4"
             >
               <div
                 v-for="rows of tables"

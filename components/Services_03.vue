@@ -1,7 +1,9 @@
 <template>
   <div class="grid grid-cols-12">
     <div class="col-span-12">
-      <div class="flex flex-row justify-between items-center gap-8 mt-16">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
+      >
         <ContentDoc path="services/block_03" v-slot="{ doc }">
           <div
             class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
@@ -12,7 +14,9 @@
               <IconCosmetic class="w-8 h-fit" />
               {{ doc.service_title }}
             </h1>
-            <div class="flex flex-row justify-between items-start w-full p-8">
+            <div
+              class="flex flex-col lg:flex-row justify-between items-start w-full p-8"
+            >
               <ul class="w-full">
                 <li
                   v-for="(item, index) in doc.cosmetic_items"

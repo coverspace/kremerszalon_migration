@@ -2,7 +2,7 @@
   <div
     class="hidden lg:flex flex-row justify-end items-center gap-x-4 p-2 border-b w-full"
   >
-    ScrollIssue_NetlifySetup_CookiesPrompt
+    Products_NetlifySetup
     <small class="text-gray-500 font-normal text-sm"
       >Elfogadott hitelkártyák</small
     >

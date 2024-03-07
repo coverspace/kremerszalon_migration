@@ -15,12 +15,14 @@
     </footer>
     <!-- partials -->
     <ScrollToTopButton />
+    <CookieBanner />
   </div>
 </template>
 
 <script setup>
 import CreditCards from "@/components/partials/CreditCards.vue";
 import ScrollToTopButton from "@/components/partials/ScrollToTopButton.vue";
+import CookieBanner from "@/components/partials/CookieBanner.vue";
 const route = useRoute();
 const { data: navigation } = await useAsyncData("navigation", () => {
   return fetchContentNavigation();

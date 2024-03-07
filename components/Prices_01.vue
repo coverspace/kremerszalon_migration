@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <small class="mt-4 text-gray-500 text-base font-light">{{
+          <small class="mt-4 mx-4 lg:mx-0 text-gray-500 text-base font-light">{{
             doc.tax
           }}</small>
         </ContentDoc>

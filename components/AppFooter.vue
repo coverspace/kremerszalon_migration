@@ -12,10 +12,10 @@
       {{ item.title }} -
       {{ item.body.children[0].children[0].value }}
     </h1>
-    <div>
+    <div class="w-full">
       <a
         :href="item.link"
-        class="flex flex-row items-center text-blue-600 font-medium"
+        class="flex flex-row justify-center items-center text-blue-600 font-medium"
         target="_blank"
       >
         <IconFacebook class="w-10 h-fit p-2" />

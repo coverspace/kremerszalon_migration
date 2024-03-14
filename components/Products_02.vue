@@ -4,17 +4,7 @@
       <div
         class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
       >
-        <div class="h-full w-auto block">
-          <NuxtImg
-            src="logo/every_green_logo.png"
-            class="w-1/2 border rounded-2xl p-14 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
-          />
-          <NuxtImg
-            src="products/every_green_products.png"
-            class="w-4/5 border rounded-2xl p-14 shadow-lg bg-gradient-to-r from-cyan-100 to-amber-100"
-          />
-        </div>
-        <ContentDoc path="products/block_01" v-slot="{ doc }">
+        <ContentDoc path="products/block_02" v-slot="{ doc }">
           <div
             class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
           >
@@ -44,6 +34,16 @@
             </div>
           </div>
         </ContentDoc>
+        <div class="h-full w-auto block">
+          <NuxtImg
+            src="logo/argabeta_logo.png"
+            class="w-1/2 border rounded-2xl px-8 py-4 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
+          />
+          <NuxtImg
+            src="products/argabeta_products.png"
+            class="w-4/5 border rounded-2xl px-8 py-4 shadow-lg bg-gradient-to-r from-cyan-100 to-amber-100"
+          />
+        </div>
       </div>
     </div>
   </div>

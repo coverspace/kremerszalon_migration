@@ -6,15 +6,15 @@
       >
         <div class="h-full w-auto block">
           <NuxtImg
-            src="logo/every_green_logo.png"
-            class="w-1/2 border rounded-2xl p-14 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
+            src="logo/Dikson_Logo_black.png"
+            class="w-1/2 border rounded-2xl px-10 py-10 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
           />
           <NuxtImg
-            src="products/every_green_products.png"
-            class="w-4/5 border rounded-2xl p-14 shadow-lg bg-gradient-to-r from-cyan-100 to-amber-100"
+            src="products/dikson_products.png"
+            class="w-4/5 border rounded-2xl px-8 py-4 shadow-lg bg-gradient-to-r from-cyan-100 to-amber-100"
           />
         </div>
-        <ContentDoc path="products/block_01" v-slot="{ doc }">
+        <ContentDoc path="products/block_03" v-slot="{ doc }">
           <div
             class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
           >

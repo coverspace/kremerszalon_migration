@@ -5,14 +5,16 @@
     v-for="item in content"
     v-if="content"
   >
-    <h1 class="text-gray-500 text-center lg:text-left">
+    <h1 class="text-gray-500 text-center lg:text-left w-full">
       {{ item.brand }}
       &copy;
       {{ currentYear }}
       {{ item.title }} -
       {{ item.body.children[0].children[0].value }}
     </h1>
-    <div class="w-full">
+    <div
+      class="flex flex-row justify-center lg:justify-end items-center w-full"
+    >
       <a
         :href="item.link"
         class="flex flex-row justify-center items-center text-blue-600 font-medium"

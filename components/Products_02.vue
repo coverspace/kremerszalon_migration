@@ -2,11 +2,11 @@
   <div class="grid grid-cols-12">
     <div class="col-span-12">
       <div
-        class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
+        class="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
       >
         <ContentDoc path="products/block_02" v-slot="{ doc }">
           <div
-            class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-cyan-100 to-amber-100"
+            class="flex flex-col justify-start items-start border rounded-2xl p-4 shadow-lg w-full bg-gradient-to-r from-red-100 to-amber-100"
           >
             <h1
               class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-4 ml-8"
@@ -34,14 +34,14 @@
             </div>
           </div>
         </ContentDoc>
-        <div class="h-full w-auto block">
+        <div class="flex flex-col justify-start items-start w-full">
           <NuxtImg
             src="logo/argabeta_logo.png"
-            class="w-1/2 border rounded-2xl px-8 py-4 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
+            class="w-full lg:w-1/2 border rounded-2xl px-8 py-4 shadow-lg mb-8 bg-gradient-to-r from-cyan-100 to-amber-100"
           />
           <NuxtImg
             src="products/argabeta_products.png"
-            class="w-4/5 border rounded-2xl px-8 py-4 shadow-lg bg-gradient-to-r from-cyan-100 to-amber-100"
+            class="w-full lg:w-4/5 border rounded-2xl px-8 py-4 shadow-lg bg-gradient-to-r from-red-100 to-amber-100"
           />
         </div>
       </div>

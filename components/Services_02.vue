@@ -2,7 +2,7 @@
   <div class="grid grid-cols-12">
     <div class="col-span-12">
       <div
-        class="flex flex-col lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
+        class="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 mt-16 mx-8 lg:mx-0"
       >
         <div class="h-full w-auto block">
           <NuxtImg

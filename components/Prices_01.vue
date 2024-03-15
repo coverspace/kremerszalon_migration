@@ -9,6 +9,9 @@
             <IconWallet class="w-8 h-fit" />
             {{ doc.prices_title }}
           </h1>
+          <small class="text-gray-500 text-lg">
+            {{ doc.prices_date }}
+          </small>
           <div
             class="flex flex-col lg:flex-row flex-wrap justify-start items-between h-full"
           >

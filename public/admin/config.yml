@@ -7,8 +7,8 @@ search: true
 
 publish_mode: editorial_workflow
 backend:
-  # name: github
-  name: test-repo # in development mode(!)
+  name: github
+  # name: test-repo # in development mode(!)
   repo: coverspace/kremerszalon_migration
   branch: main
   squash_merges: true

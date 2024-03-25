@@ -11,7 +11,7 @@
             <h1
               class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-4 ml-8"
             >
-              <IconCosmetic class="w-8 h-fit" />
+              <IconCosmetic class="w-8 h-auto" />
               {{ doc.product_title }}
             </h1>
             <div
@@ -26,7 +26,7 @@
                   <p
                     class="flex flex-row items-center gap-x-2 text-lg text-gray-500 font-semibold"
                   >
-                    <IconCheck class="w-8 h-fit text-green-700" />
+                    <IconCheck class="w-8 h-auto text-green-700" />
                     {{ item }}
                   </p>
                 </li>

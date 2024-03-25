@@ -11,7 +11,7 @@
           class="text-gray-600 text-3xl flex flex-row justify-between items-center gap-2"
         >
           <span>Sütik</span>
-          <IconCookies class="w-8 h-fit text-amber-600" />
+          <IconCookies class="w-8 h-auto text-amber-600" />
         </h1>
         <p class="text-justify text-sm lg:text-xl text-gray-600 font-normal">
           Ez a weboldal sütiket (cookies) használ, hogy segítse az azonosítást,

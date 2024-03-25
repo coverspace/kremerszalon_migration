@@ -9,12 +9,12 @@
           <div
             class="flex flex-row justify-between border rounded-2xl p-4 my-4 shadow-lg bg-gradient-to-r from-yellow-100 to-pink-100"
           >
-            <IconQuote class="hidden lg:block w-32 h-fit rotate-180" />
+            <IconQuote class="hidden lg:block w-32 h-auto rotate-180" />
             <ContentRenderer
               :value="doc"
               class="text-justify text-xl m-4 text-gray-600 font-fancy-1b"
             />
-            <IconQuote class="hidden lg:block w-32 h-fit mt-auto mb-0" />
+            <IconQuote class="hidden lg:block w-32 h-auto mt-auto mb-0" />
           </div>
         </ContentDoc>
         <div

@@ -5,7 +5,7 @@
     title="Lap tetejére"
     class="fixed bottom-5 right-0 z-10 p-2 rounded-l-lg border border-r-0 border-gray-300 bg-gray-100"
   >
-    <IconUp class="w-5 h-fit text-gray-400 hover:text-gray-500" />
+    <IconUp class="w-5 h-auto text-gray-400 hover:text-gray-500" />
   </button>
 </template>
 

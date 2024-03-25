@@ -21,7 +21,7 @@
             <h1
               class="flex flex-row items-center gap-x-2 text-gray-500 font-bold text-2xl mt-4 ml-8"
             >
-              <IconNail class="w-12 h-fit" />
+              <IconNail class="w-12 h-auto" />
               {{ doc.service_title }}
             </h1>
             <div
@@ -46,7 +46,7 @@
                     <p
                       class="flex flex-row items-center gap-x-2 text-lg text-gray-500 font-semibold"
                     >
-                      <IconCheck class="w-8 h-fit text-green-700" />
+                      <IconCheck class="w-8 h-auto text-green-700" />
                       {{ item }}
                     </p>
                   </li>
@@ -66,14 +66,14 @@
                   <small
                     class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-lg"
                   >
-                    <IconNail class="w-8 h-fit" />
+                    <IconNail class="w-8 h-auto" />
                     {{ item.role }}
                   </small>
                   <a
                     :href="`tel:${item.phone}`"
                     class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
                   >
-                    <IconPhone class="w-6 h-fit" />
+                    <IconPhone class="w-6 h-auto" />
                     {{ item.phone }}
                   </a>
                   <a
@@ -83,7 +83,7 @@
                     target="_blank"
                     class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
                   >
-                    <IconLink class="w-6 h-fit" />
+                    <IconLink class="w-6 h-auto" />
                     {{ item.link }}
                   </a>
                 </div>

@@ -6,7 +6,7 @@
           <h1
             class="flex flex-row justify-start items-center my-8 text-gray-600 text-xl mx-auto lg:text-4xl mt-2 lg:ml-0 lg:mr-auto"
           >
-            <IconWallet class="w-8 h-fit" />
+            <IconWallet class="w-8 h-auto" />
             {{ doc.prices_title }}
           </h1>
           <small class="text-gray-500 text-lg">

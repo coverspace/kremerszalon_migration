@@ -3,11 +3,11 @@
     <div class="col-span-12">
       <div class="lg:hidden flex flex-row justify-between items-center">
         <a href="/">
-          <NuxtImg src="logo.png" class="w-44 h-fit my-6 mx-4" />
+          <NuxtImg src="logo.png" class="w-44 h-auto my-6 mx-4" />
         </a>
         <span @click="openMenu">
           <IconMenu
-            class="w-10 h-fit p-2 border rounded-lg m-8 bg-gray-50 focus:bg-gray-200 text-gray-500"
+            class="w-10 h-auto p-2 border rounded-lg m-8 bg-gray-50 focus:bg-gray-200 text-gray-500"
           />
         </span>
       </div>
@@ -21,7 +21,7 @@
       </Transition>
       <div class="hidden lg:flex flex-row justify-between items-center w-full">
         <a href="/">
-          <NuxtImg src="logo.png" class="w-44 h-fit my-6 mx-4" />
+          <NuxtImg src="logo.png" class="w-44 h-auto my-6 mx-4" />
         </a>
         <ul
           class="flex flex-row justify-end items-center gap-x-10 w-full p-4 px-8"

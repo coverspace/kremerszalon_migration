@@ -9,7 +9,7 @@
             <h1
               class="flex flex-row items-center gap-x-2 m-8 text-gray-500 font-bold text-xl lg:text-3xl mt-2"
             >
-              <IconHaircut class="w-8 h-fit" />
+              <IconHaircut class="w-8 h-auto" />
               {{ doc.service_text }}
             </h1>
           </div>
@@ -27,16 +27,16 @@
               <small
                 class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-lg"
               >
-                <IconHaircut v-if="item.order === 1" class="w-8 h-fit" />
-                <IconNail v-if="item.order === 2" class="w-8 h-fit" />
-                <IconCosmetic v-if="item.order === 3" class="w-8 h-fit" />
+                <IconHaircut v-if="item.order === 1" class="w-8 h-auto" />
+                <IconNail v-if="item.order === 2" class="w-8 h-auto" />
+                <IconCosmetic v-if="item.order === 3" class="w-8 h-auto" />
                 {{ item.role }}
               </small>
               <a
                 :href="`tel:${item.phone}`"
                 class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
               >
-                <IconPhone class="w-6 h-fit" />
+                <IconPhone class="w-6 h-auto" />
                 {{ item.phone }}
               </a>
               <a
@@ -46,7 +46,7 @@
                 target="_blank"
                 class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
               >
-                <IconLink class="w-6 h-fit" />
+                <IconLink class="w-6 h-auto" />
                 {{ item.link }}
               </a>
             </div>
@@ -60,7 +60,7 @@
           <h1
             class="flex flex-row items-center gap-x-2 m-8 text-gray-500 font-bold text-xl lg:text-3xl mt-2"
           >
-            <IconMap class="w-8 h-fit" />
+            <IconMap class="w-8 h-auto" />
             {{ doc.map_text }}
           </h1>
         </div>

@@ -9,7 +9,7 @@
             <h1
               class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-xl lg:text-4xl mx-auto mt-2 lg:ml-8"
             >
-              <IconTeam class="w-8 h-fit" />
+              <IconTeam class="w-8 h-auto" />
               {{ doc.service_text }}
             </h1>
             <div
@@ -27,9 +27,9 @@
                   v-if="item.role"
                   class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-lg"
                 >
-                  <IconHaircut v-if="item.order === 1" class="w-8 h-fit" />
-                  <IconCamera v-if="item.order === 2" class="w-8 h-fit" />
-                  <IconDress v-if="item.order === 3" class="w-8 h-fit" />
+                  <IconHaircut v-if="item.order === 1" class="w-8 h-auto" />
+                  <IconCamera v-if="item.order === 2" class="w-8 h-auto" />
+                  <IconDress v-if="item.order === 3" class="w-8 h-auto" />
 
                   {{ item.role }}
                 </small>
@@ -38,7 +38,7 @@
                   :href="`tel:${item.phone}`"
                   class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
                 >
-                  <IconPhone class="w-6 h-fit" />
+                  <IconPhone class="w-6 h-auto" />
                   {{ item.phone }}
                 </a>
                 <a
@@ -48,7 +48,7 @@
                   target="_blank"
                   class="flex flex-row justify-start items-center gap-x-1 text-gray-600 text-xl ml-auto mr-0"
                 >
-                  <IconLink class="w-6 h-fit" />
+                  <IconLink class="w-6 h-auto" />
                   {{ item.link }}
                 </a>
               </div>
@@ -67,7 +67,7 @@
             <h1
               class="flex flex-row items-center gap-x-2 my-8 text-gray-600 text-xl lg:text-4xl mt-2 mx-auto lg:ml-8"
             >
-              <IconModel class="w-8 h-fit" />
+              <IconModel class="w-8 h-auto" />
               <ContentRenderer :value="doc" />
             </h1>
             <div

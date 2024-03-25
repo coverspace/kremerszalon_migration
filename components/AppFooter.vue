@@ -20,7 +20,7 @@
         class="flex flex-row justify-center items-center text-blue-600 font-medium"
         target="_blank"
       >
-        <IconFacebook class="w-10 h-fit p-2" />
+        <IconFacebook class="w-10 h-auto p-2" />
         {{ item.linkText }}</a
       >
     </div>

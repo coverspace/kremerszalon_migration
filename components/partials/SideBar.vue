@@ -10,12 +10,12 @@
         <div
           class="flex flex-row justify-start items-center ml-6 gap-x-2 w-full"
         >
-          <IconSidebar class="w-8 h-fit text-gray-600" />
+          <IconSidebar class="w-8 h-auto text-gray-600" />
           <h1 class="text-lg text-gray-600 font-semibold">Oldalsáv</h1>
         </div>
         <span @click="$emit('cancel')" class="ml-auto mr-0">
           <IconClose
-            class="w-10 h-fit p-2 m-8 text-gray-500 border-2 rounded-lg bg-slate-50 active:bg-slate-200"
+            class="w-10 h-auto p-2 m-8 text-gray-500 border-2 rounded-lg bg-slate-50 active:bg-slate-200"
           />
         </span>
       </div>
